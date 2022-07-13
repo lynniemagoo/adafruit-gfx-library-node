@@ -29,6 +29,9 @@ const Display = {Display_Base, Adafruit_SPITFT};
 const Mixins = {Mixin_I2C_Display, ...Mixin_SPI_Display_Module, Mixin_RBG565_Display_Render, Mixin_RGB565_GFXcanvas16_Render};
 const Utils = {...UtilsModule};
 
+const UTILS_LOCATION = LIB_LOCATION + "fonts/";
+const Fonts = require(FONTS_LOCATION + "FontProxy.js");
+
 module.exports = {
-    Canvas, Core, Display, Mixins, Utils
+    Canvas, Core, Display, Fonts, Mixins, Utils
 }
