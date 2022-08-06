@@ -5,7 +5,6 @@ const CANVAS_LOCATION = LIB_LOCATION + "canvas/";
 const GFXcanvas1Module = require(CANVAS_LOCATION + "GFXcanvas1.js");
 const GFXcanvas8 = require(CANVAS_LOCATION + "GFXcanvas8.js");
 const GFXcanvas16 = require(CANVAS_LOCATION + "GFXcanvas16.js");
-const GFXcanvas16_RGB565 = require(CANVAS_LOCATION + "GFXcanvas16_RGB565.js");
 
 const CORE_LOCATION = LIB_LOCATION + "core/";
 const Adafruit_GFX = require(CORE_LOCATION + "Adafruit_GFX.js");
@@ -22,7 +21,7 @@ const Mixin_RBG565_Display_Render = require(MIXINS_LOCATION + "Mixin_RBG565_Disp
 const UTILS_LOCATION = LIB_LOCATION + "utils/";
 const CommonUtilsModule = require(UTILS_LOCATION + "CommonUtils.js");
 
-const Canvas = {...GFXcanvas1Module, GFXcanvas8, GFXcanvas16, GFXcanvas16_RGB565};
+const Canvas = {...GFXcanvas1Module, GFXcanvas8, GFXcanvas16};
 const Core = {Adafruit_GFX};
 const Display = {Display_Base, Adafruit_SPITFT};
 const Mixins = {...Mixin_I2C_Display_Module, ...Mixin_SPI_Display_Module, Mixin_RBG565_Display_Render};
