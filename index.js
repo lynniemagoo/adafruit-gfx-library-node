@@ -18,18 +18,15 @@ const MIXINS_LOCATION = LIB_LOCATION + "mixins/";
 const Mixin_I2C_Display_Module = require(MIXINS_LOCATION + "Mixin_I2C_Display.js");
 const Mixin_SPI_Display_Module = require(MIXINS_LOCATION + "Mixin_SPI_Display.js");
 const Mixin_RBG565_Display_Render = require(MIXINS_LOCATION + "Mixin_RBG565_Display_Render.js");
-const Mixin_RGB565_Jimp_Render = require(MIXINS_LOCATION + "Mixin_RGB565_Jimp_Render.js");
-const Mixin_RGB565_Bresenham_Render = require(MIXINS_LOCATION + "Mixin_RGB565_Bresenham_Render.js");
 
 const UTILS_LOCATION = LIB_LOCATION + "utils/";
 const CommonUtilsModule = require(UTILS_LOCATION + "CommonUtils.js");
-const ColorUtils_RGB565 = require(UTILS_LOCATION + "ColorUtils_RGB565.js");
 
 const Canvas = {...GFXcanvas1Module, GFXcanvas8, GFXcanvas16, GFXcanvas16_RGB565};
 const Core = {Adafruit_GFX};
 const Display = {Display_Base, Adafruit_SPITFT};
-const Mixins = {...Mixin_I2C_Display_Module, ...Mixin_SPI_Display_Module, Mixin_RBG565_Display_Render, Mixin_RGB565_Jimp_Render, Mixin_RGB565_Bresenham_Render};
-const Utils = {...CommonUtilsModule, ColorUtils_RGB565 };
+const Mixins = {...Mixin_I2C_Display_Module, ...Mixin_SPI_Display_Module, Mixin_RBG565_Display_Render};
+const Utils = {...CommonUtilsModule};
 
 const FONTS_LOCATION = LIB_LOCATION + "fonts/";
 const Fonts = require(FONTS_LOCATION + "FontProxy.js");
