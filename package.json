@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "NodeJS Promise-based port of C/C++ Adafruit-GFX-Library from Github",
   "main": "index.js",
-  "dependencies": {
+  "optionalDependencies": {
     "i2c-bus": "^5.2.2",
     "onoff": "^6.0.3",
     "spi-device": "^3.1.2"
