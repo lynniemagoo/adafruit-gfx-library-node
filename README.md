@@ -33,7 +33,7 @@ The following code was tested using Node.js v16.13.2 and should work once the fo
 
 - oled-font-pack
 - @lynniemagoo/adafruit-gfx-library
-- @adafruit-ssd-1306-library
+- @lynniemagoo/adafruit-ssd-1306-library
 
 ***Note that you may need to change the I2C Bus Number or the I2C Address below depending on your display.***
 
