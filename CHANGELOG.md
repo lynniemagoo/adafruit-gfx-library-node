@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.3 2023-08-13
+
+- Updates to properly support startWrite() endWrite() for use with SPI and I2C transactions if a custom hardware mixin is written and requires them.
+
 ## v1.0.2 2023-07-27
 
 - Fix issue where index not calculated properly in Adafruit_GrayOLED.js for displays where bpp = 1.
