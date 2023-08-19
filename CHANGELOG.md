@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.4 2023-08-19
+
+- Updates to account for timing differences with SPI displays requiring support for GPIO settle time.  Settle time is 1ms on DC GPIO transitions.
+- Fix issue where startup()/shutdown() on a display returns before IO worker chaining completes.
+
 ## v1.0.3 2023-08-13
 
 - Updates to properly support startWrite() endWrite() for use with SPI and I2C transactions if a custom hardware mixin is written and requires them.
