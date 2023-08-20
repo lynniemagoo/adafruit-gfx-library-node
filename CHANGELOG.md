@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.5 2023-08-19
+
+- Remove sleepMs(1) and replace with promisified nextTick.
+- Revert change from 1.0.4 
+- Fix issue where startup()/shutdown() on a display returns before IO worker chaining completes.
+
 ## v1.0.4 2023-08-19
 
 - Updates to account for timing differences with SPI displays requiring support for GPIO settle time.  Settle time is 1ms on DC GPIO transitions.
