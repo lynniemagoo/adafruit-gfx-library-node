@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.6 2023-08-27
+
+- Cosmetic changes to I2C and SPI Mixins following analysis of nested start/endWrite calls.
+  The changes have no impact on current implementations but users wanting to implement their
+  own custom SPI or I2C implementations should review comments in the Mixins.
+- Comment added to Adafruit_SPITFT and AdafruitGrayOLED.js regarding differences between the
+  Adafruit CPP libraries and the Javascript implementation provided here.
+- Adafruit_GFX.js updated to remove nested call to startWrite/endWrite in fillRoundRect().
+
 ## v1.0.5 2023-08-19
 
 - Remove sleepMs(1) and replace with promisified nextTick.

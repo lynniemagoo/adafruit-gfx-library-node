@@ -1,6 +1,6 @@
 {
   "name": "@lynniemagoo/adafruit-gfx-library",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "NodeJS Promise-based port of C/C++ Adafruit-GFX-Library from Github",
   "main": "index.js",
   "dependencies": {
