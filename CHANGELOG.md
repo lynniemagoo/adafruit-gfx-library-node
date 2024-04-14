@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.0 2024-04-14
+
+- Adafruit_GFX - Provide ability to set cursorX and cursorY independently
+- Adafruit_GrayOLED - Removed the self._dcGpioLowForCommandData control hack as is no longer required.
+
 ## v1.0.6 2023-08-27
 
 - Cosmetic changes to I2C and SPI Mixins following analysis of nested start/endWrite calls.
